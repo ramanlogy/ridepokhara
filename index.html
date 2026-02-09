@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Pokhara | Premium Motorcycle & Scooter Rental Lakeside | Bike Rent in Pokhara Nepal</title>
+    <meta name="description" content="Best bike rental in Pokhara Lakeside. Rent Royal Enfield, scooters & motorcycles. Premium bike hire service for Sarangkot, Mustang & Annapurna rides. Book now at affordable rates.">
+    <meta name="keywords" content="bike rental pokhara, rent motorcycle nepal, scooter hire lakeside, royal enfield rental pokhara, himalayan bike tour, pokhara bike hire, cheap scooter rental nepal, bike rent pokhara lakeside, two wheeler rental pokhara">
+    
+    <!-- SEO & Social Meta -->
+    <meta property="og:title" content="Ride Pokhara - Premium Bike Rentals in Lakeside">
+    <meta property="og:description" content="Premium motorcycle and scooter rentals in Pokhara. Explore the Himalayas with the best fleet.">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header Styles */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: white;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 6rem;
+        }
+
+        .brand-logo {
+            font-weight: 900;
+            font-size: 2.5rem;
+            letter-spacing: -0.1em;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .brand-logo span {
+            position: relative;
+        }
+
+        .brand-logo .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid black;
+            position: absolute;
+            top: -10px;
+            right: -5px;
+            transform: rotate(35deg);
+        }
+
+        .brand-text {
+            margin-left: 1rem;
+            font-size: 0.875rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: -0.025em;
+            line-height: 1.2;
+            color: #6b7280;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #6b7280;
+        }
+
+        .phone {
+            margin-left: 2rem;
+            font-weight: 900;
+            font-size: 0.875rem;
+            letter-spacing: -0.025em;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            background: white;
+            border-bottom: 1px solid #f0f0f0;
+            padding: 1.5rem;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu a {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.025em;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 3rem 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .hero-content {
+            padding-top: 3rem;
+        }
+
+        .hero-subtitle {
+            font-size: 0.875rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .hero-title {
+            font-weight: 900;
+            font-size: 4rem;
+            letter-spacing: -0.05em;
+            line-height: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 3rem;
+            max-width: 28rem;
+            line-height: 1.6;
+        }
+
+        .btn-black {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1.5rem 3rem;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.875rem;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-black:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.3);
+        }
+
+        .hero-image-container {
+            position: relative;
+        }
+
+        .hero-image {
+            aspect-ratio: 16/10;
+            overflow: hidden;
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border: 1px solid #f0f0f0;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .featured-bike {
+            position: absolute;
+            bottom: -3rem;
+            left: -3rem;
+            width: 18rem;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border: 1px solid #f0f0f0;
+            display: none;
+        }
+
+        .featured-bike-label {
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .featured-bike img {
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            filter: grayscale(100%);
+        }
+
+        .featured-bike h3 {
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+
+        .featured-bike-price {
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 8rem 0;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        .about-title {
+            font-size: 2.2rem;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.025em;
+        }
+
+        .about-title .highlight {
+            color: #d1d5db;
+            font-style: italic;
+        }
+
+        .about-title .underline {
+            text-decoration: underline;
+            text-underline-offset: 0.5rem;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .image-grid img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.5s ease;
+        }
+
+        .image-grid img:hover {
+            filter: grayscale(0%);
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .feature-box p {
+            color: #6b7280;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* Fleet Section */
+        .fleet-section {
+            background: #f9fafb;
+            padding: 8rem 0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-weight: 900;
+            font-size: 5rem;
+            letter-spacing: -0.05em;
+            line-height: 0.9;
+            text-transform: uppercase;
+        }
+
+        .section-link {
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: underline;
+            letter-spacing: 0.1em;
+            color: #000;
+        }
+
+        .bikes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+
+        .bike-card {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bike-image-container {
+            aspect-ratio: 1;
+            background: white;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .bike-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.5s ease;
+        }
+
+        .bike-image-container:hover img {
+            filter: grayscale(0%);
+        }
+
+        .bike-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: #000;
+            color: #fff;
+            font-size: 0.625rem;
+            font-weight: bold;
+            padding: 0.25rem 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .bike-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .bike-name {
+            font-size: 1.25rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.25rem;
+        }
+
+        .bike-engine {
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .bike-price {
+            text-align: right;
+        }
+
+        .bike-price-amount {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 900;
+            letter-spacing: -0.025em;
+        }
+
+        .bike-price-label {
+            font-size: 0.625rem;
+            font-weight: bold;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .bike-btn {
+            margin-top: 1.5rem;
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #000;
+            background: transparent;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .bike-btn:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 8rem 0;
+            border-top: 1px solid #1f2937;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 4rem;
+        }
+
+        .footer-brand {
+            grid-column: span 2;
+        }
+
+        .footer-brand h2 {
+            font-size: 3.75rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand p {
+            color: #6b7280;
+            max-width: 28rem;
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .footer-section h4 {
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            color: #6b7280;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+        }
+
+        .footer-section a {
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #6b7280;
+        }
+
+        .footer-bottom {
+            margin-top: 8rem;
+            padding-top: 3rem;
+            border-top: 1px solid #1f2937;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.625rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #4b5563;
+        }
+
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+        }
+
+        .chat-window {
+            width: 24rem;
+            height: 500px;
+            background: white;
+            border: 2px solid #000;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+        }
+
+        .chat-window.active {
+            display: flex;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .chat-header {
+            background: #000;
+            color: #fff;
+            padding: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-close {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .chat-message {
+            display: flex;
+        }
+
+        .chat-message.user {
+            justify-content: flex-end;
+        }
+
+        .chat-message .bubble {
+            max-width: 80%;
+            padding: 0.75rem;
+        }
+
+        .chat-message.bot .bubble {
+            background: #f3f4f6;
+            color: #000;
+        }
+
+        .chat-message.user .bubble {
+            background: #000;
+            color: #fff;
+        }
+
+        .chat-input-area {
+            padding: 1rem;
+            border-top: 2px solid #000;
+            background: #fff;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chat-input {
+            flex: 1;
+            border: 1px solid #000;
+            padding: 0.75rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+            outline: none;
+        }
+
+        .chat-send {
+            background: #000;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .chat-send:hover {
+            opacity: 0.8;
+        }
+
+        .chat-toggle {
+            background: #000;
+            color: #fff;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            font-weight: 900;
+            font-size: 1.5rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .chat-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .chat-toggle:active {
+            transform: scale(0.95);
+        }
+
+        /* Guides Section */
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 4rem;
+        }
+
+        .guide-card {
+            cursor: pointer;
+        }
+
+        .guide-card a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .guide-image {
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            background: #f3f4f6;
+        }
+
+        .guide-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.5s ease;
+        }
+
+        .guide-card:hover .guide-image img {
+            filter: grayscale(0%);
+        }
+
+        .guide-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            transition: text-decoration 0.3s;
+        }
+
+        .guide-card:hover .guide-title {
+            text-decoration: underline;
+        }
+
+        .guide-excerpt {
+            color: #6b7280;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .guide-link {
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .guide-link svg {
+            width: 1rem;
+            height: 1rem;
+            margin-left: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 8rem;
+            }
+
+            .about-title {
+                font-size: 3.5rem;
+            }
+
+            .section-title {
+                font-size: 9rem;
+            }
+
+            .featured-bike {
+                display: block;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero {
+                grid-template-columns: 5fr 7fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            nav {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 1023px) {
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .chat-window {
+                width: 20rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-brand {
+                grid-column: span 1;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+
+        /* Article Styles */
+        .article-content {
+            max-width: 56rem;
+            margin: 0 auto;
+            padding: 6rem 1.5rem;
+        }
+
+        .article-meta {
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #6b7280;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-weight: 900;
+            font-size: 3rem;
+            letter-spacing: -0.05em;
+            line-height: 0.9;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+        .article-image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            margin-bottom: 4rem;
+            filter: grayscale(100%);
+        }
+
+        .article-body h2 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: -0.025em;
+            line-height: 1;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #1a1a1a;
+            font-size: 1.125rem;
+        }
+
+        .article-body ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+
+        .article-cta {
+            margin-top: 6rem;
+            padding-top: 3rem;
+            border-top: 1px solid #000;
+        }
+
+        .article-cta .btn-black {
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .article-title {
+                font-size: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="#/" class="brand-logo">
+                    <span>RP<div class="arrow"></div></span>
+                    <div class="brand-text">Ride<br/>Pokhara</div>
+                </a>
+                <nav id="desktop-nav">
+                    <a href="#/fleet">Fleet</a>
+                    <a href="#/guides">Guides</a>
+                    <a href="#/contact">Contact</a>
+                    <div class="phone">+977-980-8561458</div>
+                </nav>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#/fleet" onclick="toggleMobileMenu()">Fleet</a>
+                <a href="#/guides" onclick="toggleMobileMenu()">Guides</a>
+                <a href="#/contact" onclick="toggleMobileMenu()">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="app-content"></main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>Ride Pokhara</h2>
+                    <p>The most reliable premium motorcycle rental in Pokhara Lakeside. Engineered for adventure, built for the mountains.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <a href="#/">Home</a>
+                    <a href="#/fleet">Fleet</a>
+                    <a href="#/guides">Guides</a>
+                    <a href="#/contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Social</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2024 Ride Pokhara Rentals</div>
+                <div>Top Ranked Bike Rental Lakeside Pokhara</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div id="chat-window" class="chat-window">
+            <div class="chat-header">
+                <span>AI Concierge</span>
+                <button class="chat-close" onclick="toggleChat()">×</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="chat-message bot">
+                    <div class="bubble">Namaste! Looking for a bike or a route in Pokhara? I can help you plan your Himalayan ride. Try asking: "Best bike for Sarangkot?" or "Route to Mustang?"</div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input id="chat-input" type="text" class="chat-input" placeholder="ASK ABOUT ROUTES..." />
+                <button onclick="sendMessage()" class="chat-send">GO</button>
+            </div>
+        </div>
+        <button id="chat-toggle" class="chat-toggle" onclick="toggleChat()">?</button>
+    </div>
+
+    <script>
+        // --- Data ---
+        const BIKES = [
+            { 
+                id: 're-classic-350', 
+                name: 'Royal Enfield Classic 350', 
+                category: 'Cruiser', 
+                engine: '350cc', 
+                pricePerDay: 2500, 
+                imageUrl: 'https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=1200', 
+                description: 'The definitive Himalayan cruiser. Perfect for long-distance touring with comfortable seating and reliable engine.', 
+                features: ['ABS', 'Classic Comfort', 'Long Range Tank'] 
+            },
+            { 
+                id: 'himalayan-411', 
+                name: 'RE Himalayan 411', 
+                category: 'Adventure', 
+                engine: '411cc', 
+                pricePerDay: 3500, 
+                imageUrl: 'https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80&w=1200', 
+                description: 'Purpose-built for the rugged trails of Upper Mustang and Annapurna circuit.', 
+                features: ['Off-road tires', 'High clearance', 'Windshield'] 
+            },
+            { 
+                id: 'honda-dio', 
+                name: 'Honda Dio Scooter', 
+                category: 'Scooter', 
+                engine: '110cc', 
+                pricePerDay: 1200, 
+                imageUrl: 'https://images.unsplash.com/photo-1449491073934-14f441c97dea?auto=format&fit=crop&q=80&w=1200', 
+                description: 'Nimble and efficient for Lakeside city sightseeing and short trips.', 
+                features: ['Automatic', 'Fuel efficient', 'Easy to ride'] 
+            },
+            { 
+                id: 'yamaha-mt15', 
+                name: 'Yamaha MT-15', 
+                category: 'Naked', 
+                engine: '155cc', 
+                pricePerDay: 2200, 
+                imageUrl: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=1200', 
+                description: 'Aggressive styling and performance for mountain curves and spirited riding.', 
+                features: ['Liquid cooled', 'LED lighting', 'Digital display'] 
+            }
+        ];
+
+        const BLOG_POSTS = [
+            { 
+                id: '1', 
+                title: 'Top 10 Scenic Routes for Bike Trips in Pokhara 2024', 
+                slug: 'scenic-routes-pokhara', 
+                category: 'Guide', 
+                date: 'March 15, 2024', 
+                author: 'Sunil Gurung', 
+                excerpt: 'Explore the best bike trails in Pokhara, from Sarangkot sunrise to the hidden valley of Methlang. Complete guide with maps and tips.', 
+                imageUrl: 'https://images.unsplash.com/photo-1502781252888-9143ba7f074e?auto=format&fit=crop&q=80&w=1200'
+            },
+            { 
+                id: '2', 
+                title: 'How to Rent a Bike in Lakeside Pokhara - Complete Checklist', 
+                slug: 'rental-guide-pokhara', 
+                category: 'Tips', 
+                date: 'March 10, 2024', 
+                author: 'Admin', 
+                excerpt: 'Documentation, safety checks, and insider tips for hassle-free motorcycle rental in Nepal. Everything you need to know before booking.', 
+                imageUrl: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=1200'
+            },
+            { 
+                id: '3', 
+                title: 'Upper Mustang by Motorcycle - Ultimate Expedition Guide', 
+                slug: 'upper-mustang-bike-trip', 
+                category: 'Adventure', 
+                date: 'March 5, 2024', 
+                author: 'Sunil Gurung', 
+                excerpt: 'A complete 10-day itinerary for your Royal Enfield Himalayan expedition to Lo Manthang. Permits, routes, and accommodation.', 
+                imageUrl: 'https://images.unsplash.com/photo-1544625555-57ccbf4ce7dc?auto=format&fit=crop&q=80&w=1200'
+            },
+            { 
+                id: '4', 
+                title: 'Kahun Danda: Hidden Viewpoint Above Pokhara', 
+                slug: 'kahun-danda', 
+                category: 'Adventure', 
+                date: 'March 1, 2024', 
+                author: 'Admin', 
+                excerpt: 'Escape the crowd and ride to the top of Kahun Danda for panoramic Himalayan views. Off-road adventure guide.', 
+                imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200'
+            },
+            { 
+                id: '5', 
+                title: 'Begnas Lake Loop - Perfect Day Ride from Pokhara', 
+                slug: 'begnas-lake', 
+                category: 'Guide', 
+                date: 'Feb 25, 2024', 
+                author: 'Local Rider', 
+                excerpt: 'Quiet roads and pristine waters await on this easy 30km loop perfect for scooters and beginners.', 
+                imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200'
+            }
+        ];
+
+        // --- Router ---
+        function router() {
+            const hash = window.location.hash.slice(1) || '/';
+            const app = document.getElementById('app-content');
+            app.innerHTML = '';
+            window.scrollTo(0, 0);
+
+            // Match blog slugs
+            if (hash.startsWith('/blog/')) {
+                const slug = hash.split('/blog/')[1];
+                renderArticle(slug);
+                return;
+            }
+
+            switch(hash) {
+                case '/fleet':
+                    renderFleet();
+                    break;
+                case '/guides':
+                    renderGuides();
+                    break;
+                case '/contact':
+                    renderContact();
+                    break;
+                default:
+                    renderHome();
+            }
+        }
+
+        window.addEventListener('hashchange', router);
+        window.addEventListener('DOMContentLoaded', router);
+
+        // --- Rendering Functions ---
+        function renderHome() {
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="container">
+                    <section class="hero">
+                        <div class="hero-content">
+                            <p class="hero-subtitle">Explore Nepal with</p>
+                            <h1 class="hero-title">Ride<br/>Pokhara</h1>
+                            <p class="hero-description">Unlock the freedom of the open road and embark on a Himalayan adventure tailored to your desires. Best bike rental rates in Lakeside.</p>
+                            <a href="#/fleet" class="btn-black">Book a ride</a>
+                        </div>
+                        <div class="hero-image-container">
+                            <div class="hero-image">
+                                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600" alt="Himalayan Biking Adventure in Pokhara"/>
+                            </div>
+                            <div class="featured-bike">
+                                <p class="featured-bike-label">Most Rented</p>
+                                <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80&w=400" alt="Royal Enfield Himalayan - Best Adventure Bike"/>
+                                <h3>RE Himalayan</h3>
+                                <p class="featured-bike-price">RS. 3500 / DAY</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="about-section">
+                        <div class="about-grid">
+                            <div class="about-title">
+                                Our agency specializes in organizing <span class="highlight">unique bike tours.</span> We offer the opportunity to explore <span class="underline">Nepal's hidden gems</span> by motorcycle.
+                            </div>
+                            <div class="about-content">
+                                <div class="image-grid">
+                                    <img src="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=600" alt="Royal Enfield Classic for rent in Pokhara"/>
+                                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600" alt="Yamaha MT15 scooter rental Lakeside"/>
+                                </div>
+                                <div class="feature-box">
+                                    <h3>Personalized Travel</h3>
+                                    <p>Whether you seek extreme off-road trails in Mustang or peaceful Lakeside cruises around Fewa Lake, we tailor every detail to your skill level and adventure goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="fleet-section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-title">The Fleet</h2>
+                            <a href="#/fleet" class="section-link">See all bikes</a>
+                        </div>
+                        <div class="bikes-grid">
+                            ${BIKES.map(b => renderBikeCard(b)).join('')}
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container" style="padding: 8rem 1.5rem;">
+                    <div class="section-header">
+                        <h2 class="section-title">Latest Guides</h2>
+                        <a href="#/guides" class="section-link">See all guides</a>
+                    </div>
+                    <div class="guides-grid">
+                        ${BLOG_POSTS.slice(0, 3).map(p => renderGuideCard(p)).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFleet() {
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="container" style="padding: 6rem 1.5rem;">
+                    <h2 class="section-title" style="margin-bottom: 4rem;">The Fleet</h2>
+                    <div class="bikes-grid">
+                        ${BIKES.map(b => renderBikeCard(b)).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderGuides() {
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="container" style="padding: 6rem 1.5rem;">
+                    <h2 class="section-title" style="margin-bottom: 4rem;">Guides</h2>
+                    <div class="guides-grid">
+                        ${BLOG_POSTS.map(p => renderGuideCard(p)).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderContact() {
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="container" style="padding: 6rem 1.5rem;">
+                    <h2 class="section-title" style="margin-bottom: 4rem;">Contact</h2>
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 6rem; align-items: start;">
+                        <div>
+                            <h3 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase; margin-bottom: 2rem;">Visit the showroom</h3>
+                            <p style="font-size: 1.25rem; font-weight: 500; color: #4b5563; margin-bottom: 3rem; line-height: 1.6;">Located in the heart of Lakeside, Baidam-6, Pokhara. We are open every day from 7 AM to 8 PM. Walk-ins welcome!</p>
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem; font-size: 1.5rem; font-weight: 900; text-transform: uppercase; letter-spacing: -0.025em;">
+                                <div>+977 980 8561458</div>
+                                <div style="color: #6b7280;">ride@pokhararental.com</div>
+                            </div>
+                        </div>
+                        <div style="aspect-ratio: 1; background: #f3f4f6; border-radius: 0.25rem; overflow: hidden; max-width: 600px;">
+                            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=1000" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%);" alt="Ride Pokhara Shop in Lakeside"/>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderArticle(slug) {
+            const post = BLOG_POSTS.find(p => p.slug === slug);
+            const app = document.getElementById('app-content');
+            
+            if (!post) {
+                app.innerHTML = `<div style="text-align: center; padding: 6rem 1.5rem; text-transform: uppercase; font-weight: 900; font-size: 2.5rem;">Guide not found</div>`;
+                return;
+            }
+
+            // Load full article content from external file if slug matches
+            if (slug === 'scenic-routes-pokhara' || slug === 'rental-guide-pokhara') {
+                window.location.href = slug + '.html';
+                return;
+            }
+
+            app.innerHTML = `
+                <div class="article-content">
+                    <p class="article-meta">${post.category} • ${post.date}</p>
+                    <h1 class="article-title">${post.title}</h1>
+                    <img src="${post.imageUrl}" class="article-image" alt="${post.title}" />
+                    <div class="article-body">
+                        <p>${post.excerpt}</p>
+                        <p>This guide is coming soon. Check out our other articles for more biking tips in Pokhara!</p>
+                    </div>
+                    <div class="article-cta">
+                        <a href="#/fleet" class="btn-black">Rent a bike for this route</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // --- Templates ---
+        function renderBikeCard(bike) {
+            return `
+                <div class="bike-card">
+                    <div class="bike-image-container">
+                        <img src="${bike.imageUrl}" alt="${bike.name} for rent in Pokhara"/>
+                        <div class="bike-category">${bike.category}</div>
+                    </div>
+                    <div class="bike-info">
+                        <div>
+                            <h3 class="bike-name">${bike.name}</h3>
+                            <p class="bike-engine">${bike.engine} ENGINE</p>
+                        </div>
+                        <div class="bike-price">
+                            <span class="bike-price-amount">Rs.${bike.pricePerDay}</span>
+                            <span class="bike-price-label">PER DAY</span>
+                        </div>
+                    </div>
+                    <button class="bike-btn" onclick="alert('Call +977-980-8561458 to book this bike!')">
+                        Check Availability
+                    </button>
+                </div>
+            `;
+        }
+
+        function renderGuideCard(post) {
+            return `
+                <article class="guide-card">
+                    <a href="#/blog/${post.slug}">
+                        <div class="guide-image">
+                            <img src="${post.imageUrl}" alt="${post.title}"/>
+                        </div>
+                        <h3 class="guide-title">${post.title}</h3>
+                        <p class="guide-excerpt">${post.excerpt}</p>
+                        <span class="guide-link">
+                            Read guide 
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </span>
+                    </a>
+                </article>
+            `;
+        }
+
+        // --- Utilities ---
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+
+        function toggleChat() {
+            const win = document.getElementById('chat-window');
+            const toggle = document.getElementById('chat-toggle');
+            win.classList.toggle('active');
+            toggle.style.display = win.classList.contains('active') ? 'none' : 'flex';
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            const container = document.getElementById('chat-messages');
+            const text = input.value.trim();
+            
+            if (!text) return;
+
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'chat-message user';
+            userMsg.innerHTML = `<div class="bubble">${text}</div>`;
+            container.appendChild(userMsg);
+            
+            input.value = '';
+            container.scrollTop = container.scrollHeight;
+
+            // Simple bot response
+            setTimeout(() => {
+                const botMsg = document.createElement('div');
+                botMsg.className = 'chat-message bot';
+                
+                let response = 'Great question! ';
+                
+                if (text.toLowerCase().includes('sarangkot') || text.toLowerCase().includes('sunrise')) {
+                    response += 'For Sarangkot sunrise, I recommend the Honda Dio scooter (Rs. 1200/day) or Royal Enfield Classic (Rs. 2500/day). The road is paved and well-maintained. Leave Lakeside at 5 AM for best views!';
+                } else if (text.toLowerCase().includes('mustang') || text.toLowerCase().includes('off-road')) {
+                    response += 'For Upper Mustang, you absolutely need the Royal Enfield Himalayan 411 (Rs. 3500/day). It has the ground clearance and power for rough terrain. Book for minimum 10 days.';
+                } else if (text.toLowerCase().includes('cheap') || text.toLowerCase().includes('budget')) {
+                    response += 'Our most affordable option is the Honda Dio automatic scooter at Rs. 1200/day. Perfect for Lakeside sightseeing and easy rides to Peace Pagoda.';
+                } else if (text.toLowerCase().includes('beginner')) {
+                    response += 'For beginners, I suggest the Honda Dio automatic scooter. It\'s easy to handle and perfect for learning. Start with short trips around Fewa Lake!';
+                } else {
+                    response += 'Call us at +977-980-8561458 or visit our Lakeside showroom. We\'ll help you choose the perfect bike for your adventure!';
+                }
+                
+                botMsg.innerHTML = `<div class="bubble">${response}</div>`;
+                container.appendChild(botMsg);
+                container.scrollTop = container.scrollHeight;
+            }, 800);
+        }
+
+        // Handle enter key in chat
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatInput = document.getElementById('chat-input');
+            if (chatInput) {
+                chatInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') sendMessage();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
