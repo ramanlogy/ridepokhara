@@ -20,14 +20,16 @@
     <meta property="og:url" content="https://pokhararideandrental.com/">
     <meta property="og:title" content="Pokhara Ride & Rental - Premium Bike & Scooter Rental Lakeside">
     <meta property="og:description" content="Best motorcycle rental in Pokhara. Royal Enfield Himalayan, XPulse, Scram 411, scooters. City & valley tours from Rs 1,300.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=1200">
+    <!-- LOGO: Replace assets/logo.png with your actual logo file -->
+    <meta property="og:image" content="assets/logo.png">
     
     <!-- Twitter Meta Tags -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://pokhararideandrental.com/">
     <meta property="twitter:title" content="Pokhara Ride & Rental - Best Bike Rental Lakeside">
     <meta property="twitter:description" content="Premium motorcycle and scooter rental in Pokhara. Explore Nepal on two wheels.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=1200">
+    <!-- LOGO: Replace assets/logo.png with your actual logo file -->
+    <meta property="twitter:image" content="assets/logo.png">
     
     <!-- Geo Meta Tags -->
     <meta name="geo.region" content="NP-3">
@@ -37,6 +39,9 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://pokhararideandrental.com/">
+    
+    <!-- Favicon - Add your logo as favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +55,7 @@
       "@type": "LocalBusiness",
       "name": "Pokhara Ride & Rental",
       "image": [
-        "https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=1200",
+        "assets/logo.png",
         "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=1200",
         "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80&w=1200",
         "https://images.unsplash.com/photo-1558980664-769d59546b3d?auto=format&fit=crop&q=80&w=1200"
@@ -187,20 +192,20 @@
         .brand-icon {
             width: 3rem;
             height: 3rem;
-            background: var(--primary-black);
+            background: var(--primary-white);
             border-radius: 0.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0.5rem;
+            padding: 0.25rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid var(--border-gray);
         }
 
         .brand-icon img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            filter: brightness(0) invert(1);
         }
 
         nav {
@@ -430,7 +435,7 @@
         }
 
         .stat-number {
-            font-size: 2rem;
+            font-size: 1.2rem;
             font-weight: 900;
             color: var(--primary-black);
             display: block;
@@ -453,7 +458,7 @@
 
         h2.section-title {
             font-weight: 900;
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             letter-spacing: -0.03em;
             line-height: 1.1;
             text-transform: uppercase;
@@ -1035,7 +1040,8 @@
             <div class="header-inner">
                 <a href="#home" class="brand-logo">
                     <div class="brand-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Pokhara Ride & Rental Logo">
+                        <!-- LOGO: Replace assets/logo.png with your actual logo file -->
+                        <img src="assets/logo.png" alt="Pokhara Ride & Rental Logo">
                     </div>
                     <span>Pokhara Ride & Rental</span>
                 </a>
@@ -1110,11 +1116,11 @@
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <span class="stat-number">500+</span>
+                            <span class="stat-number">1500+</span>
                             <span class="stat-label">Happy Riders</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">15+</span>
+                            <span class="stat-number">30+</span>
                             <span class="stat-label">Premium Bikes</span>
                         </div>
                         <div class="stat-item">
@@ -1135,9 +1141,10 @@
                 </div>
 
                 <div class="fleet-tabs">
-                    <button class="fleet-tab active" onclick="filterFleet('all')">All Bikes</button>
+                    <button class="fleet-tab active" onclick="filterFleet('all')">All</button>
+                     <button class="fleet-tab" onclick="filterFleet('motorcycle')">Motorcycles</button>
                     <button class="fleet-tab" onclick="filterFleet('scooter')">Scooters</button>
-                    <button class="fleet-tab" onclick="filterFleet('motorcycle')">Motorcycles</button>
+                    <button class="fleet-tab " onclick="filterFleet('Cars')">Cars</button>
                 </div>
 
                 <div class="bikes-grid" id="bikes-grid">
@@ -1533,68 +1540,101 @@
             </div>
         </section>
 
-        <!-- Terms & Conditions Section -->
-        <section id="terms" class="terms-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Terms & Conditions</h2>
-                    <p class="section-subtitle">Please read our rental terms carefully before booking your motorcycle or scooter.</p>
+       <!-- Terms & Conditions Section -->
+<section id="terms" class="faq-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Terms & Conditions</h2>
+            <p class="section-subtitle">
+                Please review our rental terms before booking.
+            </p>
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Rental Duration</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Vehicles are rented for the agreed period only. Late returns may incur hourly charges. Delays exceeding 6 hours will be charged as a full extra day.</p>
                 </div>
+            </div>
 
-                <div class="terms-content">
-                    <ul class="terms-list">
-                        <li>
-                            <strong>Rental Duration</strong>
-                            <p>Scooters and bikes are rented for the agreed period only. Extra hours beyond the rental period may incur additional charges. Please return the vehicle on time to avoid penalty fees.</p>
-                        </li>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Security Deposit</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>A refundable security deposit is required before rental. The full amount is returned upon safe and damage-free return of the vehicle.</p>
+                </div>
+            </div>
 
-                        <li>
-                            <strong>Security Deposit</strong>
-                            <p>A refundable security deposit is required before renting any vehicle. The deposit amount varies by bike model and rental duration. Full refund upon safe return of the vehicle without damages.</p>
-                        </li>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Fuel Policy</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>All vehicles are provided with full fuel. They must be returned with the same fuel level. Any shortage will be deducted from the deposit.</p>
+                </div>
+            </div>
 
-                        <li>
-                            <strong>Fuel Policy</strong>
-                            <p>All vehicles are provided with full fuel at the start of rental. Customers must return the vehicle with the same fuel level. If returned with less fuel, applicable fuel charges will be deducted from the security deposit.</p>
-                        </li>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Damage & Accidents</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Riders are responsible for any damage, accidents, or misuse during the rental period. Repair costs will be deducted from the deposit. Additional charges may apply for major damages.</p>
+                </div>
+            </div>
 
-                        <li>
-                            <strong>Helmet & Safety Equipment</strong>
-                            <p>Wearing helmets is mandatory for all riders and passengers as per Nepal traffic laws. We provide complimentary helmets with every rental. Riders are fully responsible for their own safety and must follow all traffic regulations.</p>
-                        </li>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Required Documents</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>A valid motorcycle license and government-issued ID are mandatory. International tourists must present a passport and valid driving permit.</p>
+                </div>
+            </div>
 
-                        <li>
-                            <strong>Late Returns</strong>
-                            <p>Late returns will be charged at an hourly rate based on the daily rental price. If the delay exceeds 6 hours, a full additional day's rental fee will apply. Please inform us in advance if you need to extend your rental period.</p>
-                        </li>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Legal Responsibility</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>All traffic fines, violations, or legal issues during the rental period are the sole responsibility of the renter.</p>
+                </div>
+            </div>
 
-                        <li>
-                            <strong>Damage & Accidents</strong>
-                            <p>Any damages, accidents, or mechanical issues during the rental period are the renter's responsibility. Repair charges will be assessed and deducted from the security deposit. In case of major damage, additional costs may apply. Always ride safely and within your skill level.</p>
-                        </li>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Age Requirement</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Minimum age is 18 years with a valid motorcycle license. Certain high-capacity bikes may require a minimum age of 21.</p>
+                </div>
+            </div>
 
-                        <li>
-                            <strong>Required Documents</strong>
-                            <p>Valid identification is mandatory for all rentals. Acceptable documents include: Valid Motorcycle License, Passport (for international tourists), Nepali Citizenship ID (for locals), or Driver's License with photo ID. Photocopies will be taken for our records.</p>
-                        </li>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Cancellation Policy</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cancellations made 24+ hours before rental receive a full refund. Within 24 hours, a 50% fee applies. No-shows forfeit the full booking amount.</p>
+                </div>
+            </div>
 
-                        <li>
-                            <strong>Legal Compliance</strong>
-                            <p>Riders must follow all local traffic rules and regulations of Nepal. The rental agency is not liable for any traffic fines, violations, or legal issues incurred during the rental period. All fines and penalties are the sole responsibility of the renter.</p>
-                        </li>
-
-                        <li>
-                            <strong>Age Requirement</strong>
-                            <p>Riders must be at least 18 years old with a valid motorcycle license. For certain high-capacity bikes, minimum age may be 21 years. Age verification is required at the time of booking.</p>
-                        </li>
-
-                        <li>
-                            <strong>Cancellation Policy</strong>
-                            <p>Cancellations made 24 hours before the rental period are eligible for full refund. Cancellations within 24 hours of rental start time will incur a 50% cancellation fee. No-shows will forfeit the entire booking amount.</p>
-                        </li>
-                    </ul>
-
-                    <div style="text-align: center; margin-top: 3rem;">
+        </div> 
+</section>
+                    <div style="text-align: center; margin-top: -2rem;">
                         <p style="font-size: 1rem; color: var(--text-gray); margin-bottom: 1.5rem;">
                             For booking assistance or any questions about our terms
                         </p>
@@ -1626,7 +1666,7 @@
 
                         <div class="contact-item">
                             <h3>Email</h3>
-                            <a href="/cdn-cgi/l/email-protection#1b72757d745b6b7470737a697a69727f7e7a757f7e756f7a7735787476"><span class="__cf_email__" data-cfemail="fc95929a93bc8c9397949d8e9d8e9598999d92989992889d90d29f9391">[email&#160;protected]</span></a>
+                            <a href="mailto:info@altitudethrilladventure.com">info@altitudethrilladventure.com</a>
                         </div>
 
                         <div class="contact-item">
@@ -1657,7 +1697,15 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>Pokhara Ride & Rental</h3>
-                    <p>The most reliable premium motorcycle and scooter rental service in Pokhara Lakeside. Engineered for adventure, built for the mountains. Your gateway to exploring Nepal on two wheels.</p>
+                    <p>
+Looking for trekking and guided adventure experiences? 
+Explore our sister company 
+<a href="https://altitudethrilladventure.com/" target="_blank" rel="noopener">
+Altitude Thrill Adventure
+</a> 
+for professionally organized treks and tours across Nepal.
+</p>
+
                 <!-- WhatsApp Float Button -->
 <a href="https://wa.me/9779856000258" 
    class="whatsapp-float" 
@@ -1716,9 +1764,8 @@
   </svg>
 
 </a>
->
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         // Hero Background Slider
         let currentSlide = 0;
         const slides = document.querySelectorAll('.hero-slide');
@@ -1821,7 +1868,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const cards = document.querySelectorAll('.bike-card, .blog-card, .faq-item');
             cards.forEach(card => {
-                cardcard.style.opacity = '0';
+                card.style.opacity = '0';
                 card.style.transform = 'translateY(20px)';
                 card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(card);
